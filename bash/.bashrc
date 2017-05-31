@@ -3,11 +3,6 @@ if [ -f "$HOME/.environment" ] ; then
     . "$HOME/.environment"
 fi
 
-# perlbrew
-if [ -f "$HOME/perl5/perlbrew/etc/bashrc" ] ; then
-    . "$HOME/perl5/perlbrew/etc/bashrc"
-fi
-
 # FZF really wants to put this in this file
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
