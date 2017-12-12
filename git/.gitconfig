@@ -27,7 +27,7 @@
 	ui = auto
 
 [diff]
-	tool = vimdiff
+	tool = vscode
 	renames = copies
 	mnemonicprefix = true
 	algorithm = patience
@@ -38,7 +38,7 @@
 [merge]
 	stat = true
 	log = true
-	tool = fugitive
+	tool = vscode
 	renamelimit = 100000
 
 [mergetool]
@@ -317,3 +317,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[mergetool "vscode"]
+	cmd = "code --wait "
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
